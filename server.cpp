@@ -119,6 +119,7 @@ int main()
 				cout << "Error in pselect" << endl;
 				cleanup(server_socket, clients);
 			}
+			continue;
 		}
 
 		if (FD_ISSET(server_socket, &fds))
